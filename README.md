@@ -16,7 +16,7 @@ BLUE will work by processing `.blue` files, which are UTF-8 encoded text files c
 
 ### INPUT
 
-**INPUT** (required) is the first block to be processed. Arguments specified here will act as global variables for the remainder of the sequence. They can be annotated with basic TypeScript types so BLUE knows what to yell at you when you give it wrong inputs. Comments above or to the right of an argument will be read by BLUE as usage documentation.
+**INPUT** _(required)_ is the first block to be processed. Arguments specified here will act as global variables for the remainder of the sequence. They can be annotated with basic TypeScript types so BLUE knows what to yell at you when you give it wrong inputs. Comments above or to the right of an argument will be read by BLUE as usage documentation.
 
 ```blue
 *** INPUT ***
@@ -26,7 +26,7 @@ BLUE will work by processing `.blue` files, which are UTF-8 encoded text files c
 
 ### SETUP
 
-**SETUP** (optional) is one of the main reasons for BLUE to exist! It should be able to run any code in any language, and make variables and functions available to the rest of the process. For now, I'll make it able to interpret JavaScript and TypeScript, but I should work on Bash and Nushell support right away too.
+**SETUP** _(optional)_ is one of the main reasons for BLUE to exist! It should be able to run any code in any language, and make variables and functions available to the rest of the process. For now, I'll make it able to interpret JavaScript and TypeScript, but I should work on Bash and Nushell support right away too.
 
 ```blue
 *** SETUP ***
@@ -44,20 +44,20 @@ function yell(str) {
 
 ### PART
 
-**PART** (optional)
+**PART** _(optional)_
 
 ### SWITCH
 
-**SWITCH** (optional)
+**SWITCH** _(optional)_
 
 ### OUTPUT
 
-**OUTPUT** (required)
+**OUTPUT** _(required)_
 
 ### ERROR
 
-**ERROR** (optional)
+**ERROR** _(optional)_
 
 ### FINALLY
 
-**FINALLY** (optional)
+**FINALLY** _(optional)_
