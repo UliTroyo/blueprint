@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "Uli Troyo",
   "main": "main.ts",
-  "description": "Uli Troyo's utility transpiles unicode things..",
+  "description": "An attempt at building a static file generator I actually like.",
   "keywords": [
     "bun",
     "transpiler",
