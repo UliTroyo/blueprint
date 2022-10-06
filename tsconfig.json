@@ -6,5 +6,5 @@
     "moduleResolution": "node",
     "types": ["bun-types"]
   },
-  "include": ["src/**/*.ts", "main.ts"]
+  "include": ["src/**/*.ts", "src/main.ts"]
 }
