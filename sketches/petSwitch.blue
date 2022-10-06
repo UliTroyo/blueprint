@@ -1,0 +1,9 @@
+*** SWITCH: say ***
+
+cat: "I'm a feline."
+dog: "I'm stupid!"
+bird: "I BELIEVE I CAN FLYYYY"
+else: "I don't know what I am..."
+
+--- SWITCH: notUsed ---
+else: ""

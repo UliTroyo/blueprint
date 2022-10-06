@@ -1,0 +1,17 @@
+{
+  "name": "blueprint",
+  "version": "0.1.0",
+  "author": "Uli Troyo",
+  "main": "main.ts",
+  "description": "Uli Troyo's utility transpiles unicode things..",
+  "keywords": [
+    "bun",
+    "transpiler",
+    "generator"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "bun-types": "^0.1.11"
+  },
+  "type": "module"
+}

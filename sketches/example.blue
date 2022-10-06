@@ -1,0 +1,54 @@
+*** INPUT ***
+
+1. name: string
+2. age: number
+
+*** SETUP ***
+lang:ts
+...
+export const greeting = `Hello, ${name}!`;
+export const pets = [
+  { type: "cat", sound: "meow" },
+  { type: "dog", sound: "bark" },
+  { type: "bird", sound: "chirp" },
+];
+--- SETUP ---
+lang: blue
+comment: ??
+...
+import say and notUsed from petSwitch.blue
+import [say, notUsed] from ./petSwitch.blue
+?? both import statements do the same thing and it's ok
+
+*** PART: listItem ***
+marks: [ ]
+...
+<li class="[ listItem.type ]">[ listItem.sound ]</li>
+--- PART:pets? ---
+[if pets?]
+<ul>
+  [ each listItem in pets ]
+</ul>
+[ else ]
+<p>Sorry, no pets.</p>
+
+*** OUTPUT ***
+to: $HOME/stuff/[each type of pet in pets].html
+...
+<p>Hi! I'm a [type] and I go "[pet.sound]"</p>
+<p>[ say pet.type ]</p>
+
+--- OUTPUT ---
+to: $HOME/index.html
+...
+<main>
+[ pets? ]
+</main>
+
+*** ERROR ***
+You dun fucked something up!
+
+*** FINALLY ***
+lang: TypeScript
+...
+console.log("I'm finished!");
